@@ -23,7 +23,7 @@ function generateUniqueRandomNumbers(x: number): number[] {
   const uniqueNumbers: Set<number> = new Set();
 
   while (uniqueNumbers.size < x) {
-    const randomNumber: number = Math.floor(Math.random() * x);
+    const randomNumber: number = Math.floor(Math.random() * x) + 1;
     uniqueNumbers.add(randomNumber);
   }
 
